@@ -1,59 +1,93 @@
 body {
     background-color: #247BA0;
-    font-family: Lato, Arial, sans-serif
+    font-family: Arial,sans-serif
+}
+
+a {
+    color: #369
 }
 
 #header {
-    border-width: 5px;
+    border-width: 3px;
     border-color: #05668D;
     background-color: #02C39A;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999
+    z-index: 100
 }
 
-#header-img.default-header { width: 35px; }
-
-.pagename a, .titlebox .redditname a {
-   font-size: 0!important;
+#header-img.default-header {
+    width: 35px;
 }
 
-.pagename a:after,
-.titlebox .redditname a:after {
-    content: 'Pin28';
+.pagename a,.titlebox .redditname a {
+    font-size: 0!important
+}
+
+.pagename a:after,.titlebox .redditname a:after {
+    content: "Pin28"
 }
 
 .pagename a:after {
-   font-size: 14px;
-   vertical-align: bottom;
-   color: #FFFFFF
+    font-size: 14px;
+    vertical-align: bottom;
+    color: #FFFFFF;
 }
 
 .titlebox .redditname a:after {
-   font-size: 26px; /*This is the name is the sidebar, so you may need to make it smaller*/
+    font-size: 26px;
 }
 
 .pagename a:hover {
-    color: #FF0000!important
 }
 
-/*make sidebar scroll with page*/
+.tabmenu li {
+    display: inline-block;
+    margin: 0px 0.5px 0px 0.5px;
+    transform: skewX(-.25rad);
+}
+
+.tabmenu li a {
+    font-size: 11px;
+    border-width: 5px;
+    border-color: #000;
+    color: #fff;
+
+    padding: 3px 8px 3px 8px;
+    background-color: #05668D;
+
+    
+        
+}
+
+.tabmenu li.selected a {
+
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #247BA0;
+    border: 3px solid #05668D;
+    border-radius: 2px;
+    border-bottom: 0px none white;
+    padding: 3px 10px 3px 10px;
+    z-index: 10
+
+}
+
 .side {
     background-color: #FFFFFF;
     position: auto;
     top: 74px;
     margin-bottom: 5px;
-    /* depends on #header height */
-    /* ^ or alternatively padding-top:90px; ^ */
-    
     right: 0;
     bottom: 0;
     overflow: auto;
     padding: 10px;
-    z-index: 99998;
-    border-radius: 3px
+    z-index: 900;
+    border-radius: 3px;
+
 }
 
 .sidecontentbox {
@@ -72,11 +106,11 @@ body {
     margin-left: 0;
     margin-bottom: 6px;
     padding: 9px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255,255,255);
     border: 0;
     border-radius: 3px;
-    box-shadow: 0 2px 2px 0 rgba(85, 45, 95, 0.3);
-    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(85,45,95,0.3);
+    position: relative
 }
 
 .thing a.title {
@@ -87,11 +121,10 @@ body {
     color: #B2DBBF
 }
 
-.thing a.title:hover,
-.thing a.title:visited:hover {
+.thing a.title:hover,.thing a.title:visited:hover {
     color: #02C39A
 }
 
 .thing a.title:active {
-    color: #FF1654;
+    color: #FF1654
 }
