@@ -1,0 +1,97 @@
+body {
+    background-color: #247BA0;
+    font-family: Lato, Arial, sans-serif
+}
+
+#header {
+    border-width: 5px;
+    border-color: #05668D;
+    background-color: #02C39A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999
+}
+
+#header-img.default-header { width: 35px; }
+
+.pagename a, .titlebox .redditname a {
+   font-size: 0!important;
+}
+
+.pagename a:after,
+.titlebox .redditname a:after {
+    content: 'Pin28';
+}
+
+.pagename a:after {
+   font-size: 14px;
+   vertical-align: bottom;
+   color: #FFFFFF
+}
+
+.titlebox .redditname a:after {
+   font-size: 26px; /*This is the name is the sidebar, so you may need to make it smaller*/
+}
+
+.pagename a:hover {
+    color: #FF0000!important
+}
+
+/*make sidebar scroll with page*/
+.side {
+    background-color: #FFFFFF;
+    position: auto;
+    top: 74px;
+    margin-bottom: 5px;
+    /* depends on #header height */
+    /* ^ or alternatively padding-top:90px; ^ */
+    
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 10px;
+    z-index: 99998;
+    border-radius: 3px
+}
+
+.sidecontentbox {
+    padding: 5px;
+    background-color: #FFFFFF;
+    border-radius: 3px
+}
+
+.content {
+    margin: 5px;
+    margin-top: 80px;
+    margin-right: 330px
+}
+
+.listing-page .sitetable .link,.organic-listing,.stylesheet-customize-container,.submit-page .content,.wiki-page .wiki-page-content,.wiki-page .wikititle,.search-page .search-result-listing,.comments-page .sitetable .link,.comment {
+    margin-left: 0;
+    margin-bottom: 6px;
+    padding: 9px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(85, 45, 95, 0.3);
+    position: relative;
+}
+
+.thing a.title {
+    color: #028090
+}
+
+.thing a.title:visited {
+    color: #B2DBBF
+}
+
+.thing a.title:hover,
+.thing a.title:visited:hover {
+    color: #02C39A
+}
+
+.thing a.title:active {
+    color: #FF1654;
+}
