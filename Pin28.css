@@ -1,5 +1,5 @@
 body {
-    background-color: #247BA0;
+    background-color: #eaf9ff;
     font-family: Arial,sans-serif
 }
 
@@ -10,7 +10,7 @@ a {
 #header {
     border-width: 3px;
     border-color: #05668D;
-    background-color: #02C39A;
+    background-color: #5DD39E;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@ a {
 
 .tabmenu li {
     display: inline-block;
-    margin: 0px 0.5px 0px 0.5px;
+    margin: 0px 1px 0px 1px;
     transform: skewX(-.25rad);
 }
 
@@ -64,14 +64,13 @@ a {
 
 .tabmenu li.selected a {
 
-    color: white;
+    color: #05668D;
     font-weight: bold;
     font-size: 14px;
-    background-color: #247BA0;
+    background-color: #eaf9ff;
     border: 3px solid #05668D;
-    border-radius: 2px;
     border-bottom: 0px none white;
-    padding: 3px 10px 3px 10px;
+    padding: 3px 12px 3px 12px;
     z-index: 10
 
 }
